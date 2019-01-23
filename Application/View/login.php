@@ -1,3 +1,4 @@
+<div class="content-login">
 <form method="post" action="<?=PUB_PATH?>/User/login">
     <div>
         <label>Email</label>
@@ -20,3 +21,4 @@ if(isset($_SESSION['idUser'])){
 <?php
 }
 ?>
+</div>

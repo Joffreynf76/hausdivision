@@ -2,6 +2,7 @@
 
 include "./Application/Controller/UserController.php";
 include "./Application/Controller/CompanyController.php";
+include "./Application/Controller/IndexController.php";
 class Framework{
 
     private $_viewparams;

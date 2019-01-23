@@ -53,6 +53,12 @@ class Company
                 echo 'erreur extension';
             }
 
+            ?>
+            <SCRIPT LANGUAGE="JavaScript">
+                document.location.href="<?=PUB_PATH?>/Company/viewCompany"
+            </SCRIPT>
+            <?php
+
         }
     }
 
@@ -124,6 +130,14 @@ class Company
             }else{
                 echo 'erreur extension';
             }
+
+
+
+            ?>
+            <SCRIPT LANGUAGE="JavaScript">
+                document.location.href="<?=PUB_PATH?>/Company/viewCompany"
+            </SCRIPT>
+<?php
 
         }
     }

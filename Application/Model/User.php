@@ -14,7 +14,7 @@ class User
 
 
     public function register(){
-        if(isset($_POST['verif'])){
+        if(isset($_POST['register'])){
             $nameUser = trim($_POST["nameUser"]);
             $firstnameUser = trim($_POST["firstnameUser"]);
             $emailUser = trim($_POST["emailUser"]);
@@ -49,7 +49,11 @@ class User
                 echo $e->getMessage();
             }
 
-            echo "register success";
+            ?>
+            <SCRIPT LANGUAGE="JavaScript">
+                document.location.href="login"
+            </SCRIPT>
+            <?php
 
 
 
@@ -87,9 +91,13 @@ class User
                     $firstname = $value["firstnameUser"];
                     $email = $value["emailUser"];
                 }
+                ?>
+                <SCRIPT LANGUAGE="JavaScript">
+                    document.location.href="profil"
+                </SCRIPT>
+                <?php
 
-                echo "Login success<br>";
-                echo"Welcome ".$firstname;
+
 
             }else {
                 echo "Error login/password";
@@ -106,7 +114,7 @@ class User
 
             ?>
             <SCRIPT LANGUAGE="JavaScript">
-                document.location.href="login"
+                document.location.href="<?=PUB_PATH?>/Index/home"
             </SCRIPT>
 
 <?php
